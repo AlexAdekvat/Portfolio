@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.avatar img{
+    width: 150px;
+    border-radius: 20px;
+    border: 3px solid #999  ;
+
+}
+.myself{
+color: rgb(243, 193, 193);
+margin-left: 400px;
+text-align: center;
+}

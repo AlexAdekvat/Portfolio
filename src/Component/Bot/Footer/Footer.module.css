@@ -1,0 +1,57 @@
+.footer {
+    height: 300px;
+    background-image: url(https://sun9-3.userapi.com/c857524/v857524662/16758b/ep5v1yiplwY.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1336px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.social{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+.iVk{
+    background-image: url(./../../../image/vk.svg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.iTelegram{
+    background-image: url(./../../../image/Telegram.svg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+.iTwitter{
+    background-image: url(./../../../image/Twitter.svg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+.iGitHub{
+    width: 50px;
+    height: 50px;
+    background-image: url(./../../../image/Github.svg);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 450px;
+}
+.navigation{
+    background-color: brown ;
+    border: 3px solid #999;
+    border-radius: 10px;
+}
