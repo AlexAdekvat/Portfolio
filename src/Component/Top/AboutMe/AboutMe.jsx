@@ -9,7 +9,7 @@ const AboutMe = () => {
             </div>
             <div className={s.myself}>
                 <div>
-                    <h1>Hello</h1>
+                    Hello
                 </div>
                 <div>
                     My name is Alex
