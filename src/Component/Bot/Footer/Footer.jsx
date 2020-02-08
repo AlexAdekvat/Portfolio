@@ -11,7 +11,7 @@ const Footer = () => {
                     <a className={s.iVk} href='https://vk.com/id154135396' />
                     <a className={s.iGitHub} href='https://github.com/AlexAdekvat' />
                     <a className={s.iTelegram} href='https://t.me/AlexAdekvat' />
-                    <a className={s.iTwitter} href='https://twitter.com/AlexAdekvat' />
+                    {/* <a className={s.iTwitter} href='https://twitter.com/AlexAdekvat' /> */}
                 </div>
             </div>
         </div>

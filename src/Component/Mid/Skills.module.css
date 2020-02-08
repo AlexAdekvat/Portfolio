@@ -1,22 +1,31 @@
-.skill {
-    display: flex;
-    background-color: rgb(180, 180, 180);
-    justify-content: center;
-
+.main{
+    padding: 100px;
+    background-color:rgba(201, 199, 199, 0.466);
+    height: 100%;
+}
+.skill{
+    text-align: center;
 }
 .container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.img{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 380px;
+    flex-direction: row;
+ justify-content:space-around;
+flex-wrap: wrap;
 }
 .icon{
     font-size: 150px;
+    color:#A61117;
+    transition: 1s;
 }
-
+.icon:hover{
+    transform: scale(1.3);
+}
+.img{
+    margin: 110px;
+    display: flex; 
+    flex-direction: column; 
+}
+.name{
+    margin-top: 10px;
+    text-align: center;
+}

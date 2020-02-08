@@ -4,11 +4,12 @@ import Navigation from './Navigation/Navigation';
 import AboutMe from './AboutMe/AboutMe';
 
 const Info=()=>{
-    return <div className={s.info}>
+    return (
+    <div className={s.info}>
         <AboutMe/>
         <Navigation/>
-        
     </div>
+    )
 }
 
 export default Info;
