@@ -3,11 +3,7 @@ import s from './AboutMe.module.css';
 
 const AboutMe = () => {
     return (
-        <div id='home' className={s.main}>
-            <div className={s.container}>
-                <div className={s.avatar}>
-                    <img src='https://sun9-37.userapi.com/c540107/v540107490/12262/eV0etlop5tc.jpg' alt='Photo' />
-                </div>
+            <div id='home' className={s.container}>
                 <div className={s.myself}>
                     <span>
                         Hello
@@ -20,7 +16,6 @@ const AboutMe = () => {
                             </span>
                 </div>
             </div>
-        </div>
     )
 }
 

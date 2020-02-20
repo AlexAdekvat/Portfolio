@@ -3,14 +3,24 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
     height: 200px;
     width: 100px;
-    /* background-color: brown ; */
     border: 3px solid #3B2728;
     border-radius: 10px;
     box-shadow: 0 0 15px rgb(19, 18, 18);
 }
 .link{
     color:#ffffff;
+}
+
+@media(max-width: 500px){
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+        width: 300px;
+        }
+    
 }

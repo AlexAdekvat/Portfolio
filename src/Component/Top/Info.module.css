@@ -4,4 +4,20 @@
     background: linear-gradient(to bottom, #2B2B2B, #CB0A12) fixed;
     padding: 35px;
     height: 600px;
+    /* flex-wrap: wrap; */
 }
+@media(max-width: 1366px){
+    .info{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:500px){
+    .info{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }   
+}
+

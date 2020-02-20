@@ -29,3 +29,9 @@ flex-wrap: wrap;
     margin-top: 10px;
     text-align: center;
 }
+
+@media(max-width: 1366px){
+    .container{
+        justify-content: space-around;
+    }
+}
