@@ -3,7 +3,7 @@
     background-color:rgba(201, 199, 199, 0.466);
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     border-bottom: 1px solid rgb(88, 11, 11);
 
 
@@ -15,7 +15,6 @@
     padding: 25px;
 }
 .input{
-    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
