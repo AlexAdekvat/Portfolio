@@ -86,7 +86,7 @@ const Contact = () => {
                         </div>
                         <div className={s.btn}>
                            <button disabled={ !messageError || !emailErrors || !nameError ||
-                            nameError.length <2 || messageError.length < 10} 
+                            nameError.length <2 || messageError.length <11} 
                                 type='submit'
                                 value='Submit'
                                 className={s.button}>Submit</button>
