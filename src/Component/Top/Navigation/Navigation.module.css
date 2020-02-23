@@ -11,6 +11,10 @@
 }
 .link{
     color:#ffffff;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 @media(max-width: 500px){

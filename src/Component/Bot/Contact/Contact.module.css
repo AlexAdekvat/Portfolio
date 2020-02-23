@@ -1,68 +1,104 @@
 .container{
     display: flex;
-    background-color:rgba(179, 174, 174, 0.466);
+    background-color:rgba(201, 199, 199, 0.466);
     flex-direction: column;
-    height: 350px;
     justify-content: center;
-    align-items: center;
+    /* min-height: 100vh; */
+    border-bottom: 1px solid rgb(88, 11, 11);
+
 
 }
 .contact{
     display: flex;
     text-align: center;
     flex-direction: column;
-
+    padding: 25px;
 }
-/* .inputfields{
-    display: flex;
-    width: 100%;
-    height: 25%;
-    margin: 15px;
-
-} */
-.name{
+.input{
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    color: rgb(105, 13, 13);
-    font-size: 12px;
-    width: 300px;
-    /* height: 30px; */
+    justify-content: center;
+}
+.name{
+    width: 500px;
+    height: 30px;
     margin: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(110, 31, 31, 0.664);
+
 }
 .email{
-    display: flex;
-    flex-direction: column;
-    color: rgb(105, 13, 13);
-    font-size: 12px;
-    width: 300px;
-    /* height: 100px; */
+    width: 500px;
+    height: 30px;
     margin: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(110, 31, 31, 0.664);
 
 
 }
 .message{
-    display: flex;
-    flex-direction: column;
-    color: rgb(105, 13, 13);
-    font-size: 12px;
-    width: 300px;
-    /* height: 30px; */
+    width: 500px;
+    height: 180px;
     margin: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgba(110, 31, 31, 0.664);
 
 }
+
+form textarea{
+    resize: none;
+    min-height: 200px;
+}
+
 .button{
-    display: flex;
     width: 200px;
     height: 30px;
     margin: 15px;
-
-
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(110, 31, 31, 0.664);
 }
-/* .errors.email{
-    display: flex;
-    width: 350px;
-    height: 30px;
-    margin: 15px;
-    color: chartreuse;
+.danger{
+    font-size: 12px;
+    color: red;
 }
- */
+
+@media (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .name{
+        width:90%;
+    }
+    .email{
+        width: 90%;
+
+    }
+    .message{
+        width: 90%;
+    }
+    
+}
+@media (min-width: 1366px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .name{
+        width:40%;
+    }
+    .email{
+        width: 40%;
+
+    }
+    .message{
+        width: 40%;
+    }
+    
+}
+

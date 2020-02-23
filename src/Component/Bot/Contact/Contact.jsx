@@ -11,12 +11,13 @@ const Contact = () => {
     } else if (nameError.length < 2 || nameError.length > 10){
         error.name = 'ERROR'
     }
+    
 
 
     const [emailErrors, setErrors] = useState('');
     let errors = {};
     if (!emailErrors) {
-        errors.email = 'Email address is required';
+        //errors.email = 'Email address is required';
     } else if (!/\S+@\S+\.\S+/.test(emailErrors )) {
         errors.email = 'Email address is invalid';
     };
@@ -36,56 +37,59 @@ const Contact = () => {
         <div id='contact' className={s.container}>
             <div className={s.contact}>
                 Contacts
-                <div>
+                <div className={s.input}>
                     <form
                     action="https://formspree.io/mvoabver"
                     method="POST"
                     >
-                        <div className={s.name}>
+                        <div className={s.names}>
                             <input
                                 onChange={(e) => setNameError(e.currentTarget.value)}
-                                value={nameError}
+                                value={nameError} required
+                                name={'name'}
                                 type='name'
                                 placeholder="Name"
-                                class={`${error.name} && is-danger`} />
+                                className={s.name} />
                             {error.name && (
-                                <p className="help is-danger">
+                                <p className={s.danger}>
                                     {error.name}
                                 </p>
                             )}
 
                         </div>
-                        <div className={s.email}>
+                        <div className={s.emails}>
                             <input
                                 onChange={(e) => setErrors(e.currentTarget.value)}
-                                value={emailErrors}
+                                value={emailErrors} required
+                                name={'email'}
                                 type='email'
                                 placeholder=' Email'
-                                className={`${errors.email} && is-danger`} />
+                                className={s.email} />
                             {errors.email && (
-                                <p className="help is-danger">
+                                <p className={s.danger}>
                                     {errors.email}
                                 </p>
                             )}
                         </div>
-                        <div className={s.message}>
+                        <div className={s.messages}>
                             <textarea
                              onChange={(e) => setMessageError(e.currentTarget.value)}
-                                 value={messageError}
+                                 value={messageError}required
+                                 name={'message'}
                                 placeholder=' Message'
-                                class={`${merror.message} && is-danger`} />
+                                className={s.message} />
                                  {merror.message && (
-                                <p className="help is-danger">
+                                <p className={s.danger}>
                                     {merror.message}
                                 </p>
                             )}
                         </div>
-                        <div className={s.button}>
+                        <div className={s.btn}>
                            <button disabled={ !messageError || !emailErrors || !nameError ||
-                            nameError.length <2 || messageError.length <2 } 
+                            nameError.length <2 || messageError.length < 10} 
                                 type='submit'
                                 value='Submit'
-                                class={s.btn}>Submit</button>
+                                className={s.button}>Submit</button>
                         </div>
                     </form>
                 </div>

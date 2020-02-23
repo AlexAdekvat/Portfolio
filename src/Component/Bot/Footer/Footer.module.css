@@ -1,9 +1,8 @@
 .footer {
-    height: 300px;
+    height: 40vh;
     background: linear-gradient(to bottom, #2B2B2B, #CB0A12) fixed;
     display: flex;
     justify-content: center;
-    height: 600;
 }
 
 .container{
@@ -23,36 +22,15 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
-    margin-top: 10px;
 }
 
-
-.iVk{
-    background-image: url(./../../../image/vk.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
+.icon{
+    color: rgb(226, 221, 221);
+    font-size: 40px;
 }
-
-.iTelegram{
-    background-image: url(./../../../image/Telegram.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-}
-.iTwitter{
-    background-image: url(./../../../image/Twitter.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-}
-.iGitHub{
-    width: 50px;
-    height: 50px;
-    background-image: url(./../../../image/Github.svg);
-    background-size: cover;
-    background-position: center;
+@media (max-width:500px){
+    .social{
+        display: flex;
+        width: 85%;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Info from './Component/Top/Info';
-import Skill from './Component/Mid/Skills';
+import Skill from './Component/Skill/Skills';
 import Communication from './Component/Bot/Bot';
 import Scroll from './Component/Scroll'
 

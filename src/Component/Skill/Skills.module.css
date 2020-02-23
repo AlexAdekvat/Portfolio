@@ -1,0 +1,9 @@
+.main{
+    padding: 25px;
+    background-color:rgba(201, 199, 199, 0.466);
+    height: 100%;
+    border-bottom: 1px solid rgb(88, 11, 11);
+}
+.skill{
+    text-align: center;
+}
