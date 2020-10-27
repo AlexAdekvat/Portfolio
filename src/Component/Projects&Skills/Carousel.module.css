@@ -1,0 +1,26 @@
+.photo{
+    height: 100px;
+    width: 200px;
+    margin-left: 100px;
+    
+}
+.project{
+    width: 200px;
+    height: 100px;
+}
+
+.carousel{
+    /* margin-top: 100px; */
+    width: 400px;
+    display: flex;
+    align-items: center;
+    height: 30%;
+
+}
+.icon{
+    font-size: 100px;
+    color:#A61117;
+    margin-left: 165px;
+    /* margin-bottom: 50px; */
+
+}
