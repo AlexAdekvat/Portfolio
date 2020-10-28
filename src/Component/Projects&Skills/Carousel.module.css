@@ -1,26 +1,92 @@
 .photo{
-    height: 100px;
-    width: 200px;
-    margin-left: 100px;
-    
+    height: 150px;
+    width: 300px;
+    /* margin-left: 50px; */
+    margin-top: 55px;
+    border-radius: 10px;
 }
+@media(max-width:500px){
+    .photo{
+    height: 120px;
+    width: 250px;
+    /* margin-left: 50px; */
+    margin-top: 80px;
+    border-radius: 10px;
+    }
+}
+
+.wrapper{
+    text-align: center;
+}
+.text h3 {
+    margin-top: 5px;
+    color: rgb(206, 204, 204);
+    text-align: center;
+    /* font-size: 18px; */
+}
+
 .project{
     width: 200px;
     height: 100px;
 }
 
+.items{
+    padding-bottom: 40px;
+}
+@media(max-width:500px){
+    .items{
+        padding-bottom: 70px;
+    }
+}
 .carousel{
     /* margin-top: 100px; */
+    /* display: block; */
+    box-shadow: 0 5px 5px 0 rgba(48, 41, 41, 0.5);
+    border-radius: 10px;
+    max-height: 200px;
     width: 400px;
     display: flex;
     align-items: center;
     height: 30%;
+}
+@media(max-width:320px){
+    .carousel{
+        width: 320px;
+    }
+}
+.iconHtml, .iconCss{
+    margin-top: 45px;
+    font-size: 165px;
+    color: rgb(167, 160, 160);
+    margin-left: 138px;
+}
+@media(max-width:500px){
+    .iconHtml, .iconCss{
+        margin-top: 70px;
+        font-size: 140px;
+        color: rgb(167, 160, 160);
+        margin-left: 138px;
+    }
+}
+.iconJs{
+    margin-top: 45px;
+    font-size: 165px;
+    color: rgb(167, 160, 160);
+    margin-left: 129px;
+    /* align-items: center; */
+}
+
+.iconReact{
+    margin-top: 45px;
+    font-size: 165px;
+    color: rgb(167, 160, 160);
+    margin-left: 118px;
+}
+.nameSkill h3{
+    /* margin-top: 5px; */
+    font-size: 23px;
+    text-align: center;
+    color: rgb(206, 204, 204);
 
 }
-.icon{
-    font-size: 100px;
-    color:#A61117;
-    margin-left: 165px;
-    /* margin-bottom: 50px; */
 
-}

@@ -1,10 +1,7 @@
 .container{
     display: flex;
-    background-color:rgba(201, 199, 199, 0.466);
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
-    border-bottom: 1px solid rgb(88, 11, 11);
 
 
 }
@@ -12,15 +9,14 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 25px;
 }
-.input{
+/* .input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 .name{
-    width: 500px;
+    width: 400px;
     height: 30px;
     margin: 15px;
     border-radius: 5px;
@@ -28,7 +24,7 @@
 
 }
 .email{
-    width: 500px;
+    width: 400px;
     height: 30px;
     margin: 15px;
     border-radius: 5px;
@@ -37,7 +33,7 @@
 
 }
 .message{
-    width: 500px;
+    width: 400px;
     height: 180px;
     margin: 15px;
     outline: none;
@@ -99,5 +95,35 @@ form textarea{
         width: 40%;
     }
     
+}
+
+/* footer */
+.container{
+    max-width: 1336px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.social{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    color: rgb(80, 14, 14);
+    font-size: 40px;
+}
+@media (max-width:500px){
+    .social{
+        display: flex;
+        width: 85%;
+    }
 }
 

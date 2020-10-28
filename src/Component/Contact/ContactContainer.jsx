@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import s from './Contact.module.css';
 
 
-const Contact = () => {
+const ContactContainer = () => {
 
     const [nameError, setNameError] = useState('');
     let error = {};
@@ -36,7 +36,6 @@ const Contact = () => {
     return (
         <div id='contact' className={s.container}>
             <div className={s.contact}>
-                Contacts
                 <div className={s.input}>
                     <form
                     action="https://formspree.io/mvoabver"
@@ -97,4 +96,4 @@ const Contact = () => {
         </div>
     )
 }
-export default Contact;
+export default ContactContainer;
