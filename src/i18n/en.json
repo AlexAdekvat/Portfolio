@@ -1,0 +1,22 @@
+{
+  "Info":{
+    "1":"Hello"
+  },
+    "info.hello": "Hello",
+    "info.name": "My name is Alex",
+    "info.i`m": "I'm front-end developer",
+  
+    "skills.title": "Skills",
+    "skills.skillDescription": "Skill description",
+  
+    "myProject.title": "Projects",
+    "mySkill.nameProjectSocialNetwork": "",
+    
+    "contact.title": "Contacts",
+    "contact.button": "Submit",
+    "contact.nameError": "Enter at least three characters",
+    "contact.emailError": "Enter a valid value",
+    "contact.messageError": "Enter at least ten characters",
+  
+    "footer.rightsReserved": "© 2019 All rights reserved"
+  }

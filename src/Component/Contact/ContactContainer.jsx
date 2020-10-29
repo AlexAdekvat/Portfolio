@@ -9,7 +9,7 @@ const ContactContainer = () => {
     if (!nameError) {
         // error.name = 'ERROR'
     } else if (nameError.length < 2 || nameError.length > 10){
-        error.name = 'ERROR'
+        error.name = 'Enter at least three characters'
     }
     
 
@@ -19,7 +19,7 @@ const ContactContainer = () => {
     if (!emailErrors) {
         //errors.email = 'Email address is required';
     } else if (!/\S+@\S+\.\S+/.test(emailErrors )) {
-        errors.email = 'Email address is invalid';
+        errors.email = 'Enter a valid value';
     };
 
 
@@ -28,7 +28,7 @@ const ContactContainer = () => {
     if (!messageError) {
         // merror.message = 'ERROR'
     } else if (messageError.length < 10 || messageError.length > 100){
-        merror.message = 'ERROR'
+        merror.message = 'Enter at least ten characters'
     }
 
 

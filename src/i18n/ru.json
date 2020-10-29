@@ -1,0 +1,22 @@
+{
+    "Info":{
+        "1":"Привет"
+      },
+    "main.hello": "Привет",
+    "main.name": "Меня зовут Alex",
+    "main.i`m": "Я Front-end разработчик",
+
+    "mySkill.title": "Скиллы",
+    "mySkill.skillDescription": "Описание скилла",
+
+    "myProject.title": "Проекты",
+    "mySkill.nameProjectSocialNetwork": "",
+
+    "contact.title": "Контакты",
+    "contact.button": "Отправить",
+    "contact.nameError": "Введите не менее трех симвлолов",
+    "contact.emailError": "Введите корректное значение",
+    "contact.messageError": "Введите не менее десяти симвлоло",
+
+    "footer.rightsReserved": "© 2019 Все права защищены"
+}

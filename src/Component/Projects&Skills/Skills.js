@@ -8,7 +8,7 @@ library.add(faReact, faHtml5, faCss3Alt, faJs);
 
 const Skills = () => {
     return (
-        <Carousel className={s.carousel} interval={null}>
+        <Carousel className={s.carousel} interval={19000}>
             <Carousel.Item className={s.items}>
                 <FontAwesomeIcon className={s.iconHtml} icon={faHtml5} />
                 <div className={s.nameSkill}>
