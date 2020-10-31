@@ -9,8 +9,8 @@ import s from './Info.module.css';
 import SwitchLang from '../Switch/Switch';
 import { useTranslation } from 'react-i18next';
 
- import messages_ru from "./../../i18n/ru.json";
- import messages_en from "./../../i18n/en.json";
+//  import messages_ru from "./../../i18n/ru.json";
+//  import messages_en from "./../../i18n/en.json";
 
 // import { FormattedMessage } from 'react-intl';
 //  import {FormattedHTMLMessage} from "react-intl";
@@ -26,7 +26,6 @@ const Info = (props) => {
 //    }
 
 
-    // let isChecked = props.currentLocal === 'en';
 
     return (
         <div className={s.info}>
@@ -47,14 +46,9 @@ const Info = (props) => {
                 </div>
                 <div className={s.container}>
                     <div className={s.myself}>
-                        {/* <span> Hello</span> */}
-                        <p>{t('Info.1')}</p>
-                        <span>
-                            My name is Alex
-                           </span>
-                        <span>
-                            I'm front-end developer
-                            </span>
+                        <span>{t('InfoHi')}</span>
+                        <span>{t('InfoName')}</span>
+                        <span>{t('InfoI`m')}</span>
                     </div>
                 </div>
                 <div className={s.btn}>

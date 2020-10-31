@@ -2,16 +2,19 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './i18next.js';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './i18next';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18next';
+
 
 
 ReactDOM.render(
-    <Suspense fallback={(<div> loading </div>)}>
-        <App />
-    </Suspense>
+    <I18nextProvider i18n={i18n}>
+  <App />
+</I18nextProvider>
     , document.getElementById('root'));
 
 

@@ -28,7 +28,8 @@
     "react-i18next": "^11.7.3",
     "react-intl": "^5.8.8",
     "react-scripts": "^3.3.0",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "react-toggle": "^4.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",
