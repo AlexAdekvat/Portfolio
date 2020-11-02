@@ -7,6 +7,7 @@ import Projects from '../Projects&Skills/Projects';
 import Skills from '../Projects&Skills/Skills';
 import s from './Info.module.css';
 import SwitchLang from '../Switch/Switch';
+import avatar from './../../image/ava.jpg'
 import { useTranslation } from 'react-i18next';
 
 //  import messages_ru from "./../../i18n/ru.json";
@@ -15,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 // import { FormattedMessage } from 'react-intl';
 //  import {FormattedHTMLMessage} from "react-intl";
 
-const Info = (props) => {
+const Info = () => {
 
     const [show, setShow] = useState(false)
     const handleClose = () => setShow(false)
@@ -30,13 +31,13 @@ const Info = (props) => {
     return (
         <div className={s.info}>
             <div className={s.containerSkillProject}>
-                <div className={s.skill} >Skills</div>
+                <div className={s.skill} >{t('Skills')}</div>
                 <Skills />
             </div>
 
             <div className={s.containerInfo}>
                 <div className={s.avatar}>
-                    <img src='https://sun9-37.userapi.com/c540107/v540107490/12262/eV0etlop5tc.jpg' alt='Photo' />
+                    <img src={avatar} alt='Photo' />
                 </div>
                 <div>
                     {/* <Switch className={s.switch} /> */}
@@ -52,16 +53,16 @@ const Info = (props) => {
                     </div>
                 </div>
                 <div className={s.btn}>
-                    <button className={s.btnContact} onClick={handleShow} >Contact</button>
+                    <button className={s.btnContact} onClick={handleShow} >{t('Contact')}</button>
                 </div>
             </div>
             <div className={s.containerSkillProject}>
-                <div className={s.project}>Projects</div>
+                <div className={s.project}>{t('Project')}</div>
                 <Projects />
             </div>
             <Modal show={show} onHide={handleClose} >
                 <Modal.Header closeButton>
-                    <Modal.Title >Contacts</Modal.Title>
+                    <Modal.Title >{t('Contacts')}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Communication />

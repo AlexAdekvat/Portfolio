@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import s from './Contact.module.css';
+import { useTranslation } from 'react-i18next';
+
 
 
 const ContactContainer = () => {
+    const { t, i18n } = useTranslation();
 
     const [nameError, setNameError] = useState('');
     let error = {};
@@ -17,9 +20,10 @@ const ContactContainer = () => {
     const [emailErrors, setErrors] = useState('');
     let errors = {};
     if (!emailErrors) {
-        //errors.email = 'Email address is required';
     } else if (!/\S+@\S+\.\S+/.test(emailErrors )) {
-        errors.email = 'Enter a valid value';
+         errors.email = 'Enter a valid value';
+        // errors.email = 'Email address is required';
+
     };
 
 
@@ -47,11 +51,12 @@ const ContactContainer = () => {
                                 value={nameError} required
                                 name={'name'}
                                 type='name'
-                                placeholder="Name"
+                                placeholder={t('Name')}
                                 className={s.name} />
                             {error.name && (
                                 <p className={s.danger}>
-                                    {error.name}
+                                    {/* {error.name}  */}
+                                    {t('ErrorName')}
                                 </p>
                             )}
 
@@ -62,11 +67,11 @@ const ContactContainer = () => {
                                 value={emailErrors} required
                                 name={'email'}
                                 type='email'
-                                placeholder=' Email'
+                                placeholder={t('Email')}
                                 className={s.email} />
                             {errors.email && (
                                 <p className={s.danger}>
-                                    {errors.email}
+                                    {t('ErrorEmail')}
                                 </p>
                             )}
                         </div>
@@ -75,11 +80,11 @@ const ContactContainer = () => {
                              onChange={(e) => setMessageError(e.currentTarget.value)}
                                  value={messageError}required
                                  name={'message'}
-                                placeholder=' Message'
+                                placeholder={t('Message')}
                                 className={s.message} />
                                  {merror.message && (
                                 <p className={s.danger}>
-                                    {merror.message}
+                                    {t('ErrorMessage')}
                                 </p>
                             )}
                         </div>
@@ -88,7 +93,7 @@ const ContactContainer = () => {
                             nameError.length <2 || messageError.length <11} 
                                 type='submit'
                                 value='Submit'
-                                className={s.button}>Submit</button>
+                                className={s.button}>{t('Submit')}</button>
                         </div>
                     </form>
                 </div>
