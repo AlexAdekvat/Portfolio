@@ -8,29 +8,37 @@ library.add(faReact, faHtml5, faCss3Alt, faJs);
 
 const Skills = () => {
     return (
-        <Carousel className={s.carousel} interval={19000}>
-            <Carousel.Item className={s.items}>
-                <FontAwesomeIcon className={s.iconHtml} icon={faHtml5} />
-                <div className={s.nameSkill}>
-                    <h3>HTML</h3>
+        <Carousel className={s.carousel} interval={null} indicators={null} >
+            <Carousel.Item className={s.items} >
+                <div className={s.wrapper}>
+                    <FontAwesomeIcon className={s.icon} icon={faHtml5} />
+                    <div className={s.name}>
+                        <p>HTML</p>
+                    </div>
                 </div>
             </Carousel.Item>
             <Carousel.Item className={s.items}>
-                <FontAwesomeIcon className={s.iconReact} icon={faReact} />
-                <div className={s.nameSkill}>
-                    <h3>REACT</h3>
+                <div className={s.wrapper}>
+                    <FontAwesomeIcon className={s.icon} icon={faReact} />
+                    <div className={s.name}>
+                        <p>REACT</p>
+                    </div>
                 </div>
             </Carousel.Item >
             <Carousel.Item className={s.items}>
-                <FontAwesomeIcon className={s.iconCss} icon={faCss3Alt} />
-                <div className={s.nameSkill}>
-                    <h3>CSS</h3>
+                <div className={s.wrapper}>
+                    <FontAwesomeIcon className={s.icon} icon={faCss3Alt} />
+                    <div className={s.name}>
+                        <p>CSS</p>
+                    </div>
                 </div>
             </Carousel.Item>
             <Carousel.Item className={s.items}>
-                <FontAwesomeIcon className={s.iconJs} icon={faJs} />
-                <div className={s.nameSkill}>
-                    <h3>JS</h3>
+                <div className={s.wrapper}>
+                    <FontAwesomeIcon className={s.icon} icon={faJs} />
+                    <div className={s.name}>
+                        <p>JS</p>
+                    </div>
                 </div>
             </Carousel.Item>
 

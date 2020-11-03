@@ -11,14 +11,14 @@ const Projects = () => {
     const { t, i18n } = useTranslation();
 
     return (
-        <Carousel className={s.carousel} interval={null}>
+        <Carousel className={s.carousel} interval={null} indicators={null}>
             <Carousel.Item className={s.items} >
                 <div className={s.wrapper}>
                     <a href='https://alexadekvat.github.io/Network/' >
                         <img className={s.photo} src={Network} />
                     </a>
-                    <div className={s.text}>
-                        <h3>{t('ProjectsNet')}</h3>
+                    <div className={s.name}>
+                        <p>{t('ProjectsNet')}</p>
 
                     </div>
                 </div>
@@ -28,8 +28,8 @@ const Projects = () => {
                     <a href='https://alexadekvat.github.io/Calculator/'>
                         <img className={s.photo} src={Calculator} />
                     </a>
-                    <div className={s.text}>
-                        <h3>{t('ProjectsCalc')}</h3>
+                    <div className={s.name}>
+                        <p>{t('ProjectsCalc')}</p>
                     </div>
                 </div>
             </Carousel.Item>

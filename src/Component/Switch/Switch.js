@@ -22,12 +22,9 @@ const SwitchLang = () => {
     };
    
     return (
-        <div className={styles.wrapper}>
             <div className={styles.switchBorder}>
                 <Switch className={styles.switch} checkedChildren="EN" unCheckedChildren="RU" onChange={handleChange}/>
             </div>
-        </div>
-
     )
 
 }
