@@ -43,23 +43,25 @@
 }
 @media(max-width:520px){
     .carousel{
-        width: 310px;
+        /* width: 310px; */
+        max-width: 75%;
         height: 65%;
     }
 }
 
 .icon{
     font-size: 165px;
-    color: rgb(167, 160, 160);
+    color: #000000;
 }
 @media(max-width:500px){
     .icon{
         font-size: 130px;
-        color: rgb(167, 160, 160);
+        color: #000000;
+        background-size: cover;
     }
 }
 .name{
     font-size: 18px;
-    color: rgb(206, 204, 204);
+    color: #ffffff;
 }
 

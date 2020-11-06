@@ -5,7 +5,7 @@ import App from './App';
 import './i18next.js';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18next';
 

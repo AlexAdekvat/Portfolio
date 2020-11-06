@@ -11,29 +11,31 @@ const Projects = () => {
     const { t, i18n } = useTranslation();
 
     return (
-        <Carousel className={s.carousel} interval={null} indicators={null}>
-            <Carousel.Item className={s.items} >
-                <div className={s.wrapper}>
-                    <a href='https://alexadekvat.github.io/Network/' >
-                        <img className={s.photo} src={Network} />
-                    </a>
-                    <div className={s.name}>
-                        <p>{t('ProjectsNet')}</p>
+        <div>
+            <Carousel className={s.carousel} id="carousel" interval={null} indicators={null}>
+                <Carousel.Item className={s.items} id="#carousel">
+                    <div className={s.wrapper} id="#carousel">
+                        <a href='https://alexadekvat.github.io/Network/' >
+                            <img className={s.photo} src={Network} id="#carousel" />
+                        </a>
+                        <div className={s.name}>
+                            <p>{t('ProjectsNet')}</p>
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item className={s.items} id="#carousel" >
+                    <div className={s.wrapper} id="#carousel">
+                        <a href='https://alexadekvat.github.io/Calculator/'>
+                            <img className={s.photo} src={Calculator}  id="#carousel"/>
+                        </a>
+                        <div className={s.name}>
+                            <p>{t('ProjectsCalc')}</p>
+                        </div>
+                    </div>
+                </Carousel.Item>
+            </Carousel>
+        </div>
 
-                    </div>
-                </div>
-            </Carousel.Item>
-            <Carousel.Item className={s.items}>
-                <div className={s.wrapper}>
-                    <a href='https://alexadekvat.github.io/Calculator/'>
-                        <img className={s.photo} src={Calculator} />
-                    </a>
-                    <div className={s.name}>
-                        <p>{t('ProjectsCalc')}</p>
-                    </div>
-                </div>
-            </Carousel.Item>
-        </Carousel>
     )
 }
 
