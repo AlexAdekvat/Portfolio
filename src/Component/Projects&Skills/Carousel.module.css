@@ -1,67 +1,52 @@
 .photo{
     height: 153px;
     width: 300px;
-    /* margin-left: 50px; */
     margin-top:10px;
     border-radius: 10px;
 }
-@media(max-width:500px){
-    .photo{
-    height: 120px;
-    width: 250px;
-
-    border-radius: 10px;
-    }
-}
 
 .wrapper{
-    /* text-align: center; */
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 
 .project{
     width: 200px;
     height: 100px;
 }
 
-/* skills */
-
 .carousel{
     box-shadow: 0 5px 5px 0 rgba(48, 41, 41, 0.5);
     border-radius: 10px;
     width: 400px;
     display: flex;
-    align-items: center;
-}
-.items{
-    display: flex;
-    align-items: center;
-    /* margin-top: 50px; */
-}
-@media(max-width:520px){
-    .carousel{
-        /* width: 310px; */
-        max-width: 75%;
-        height: 65%;
-    }
 }
 
 .icon{
     font-size: 165px;
-    color: #000000;
+    color: #ffffff;  
 }
-@media(max-width:500px){
-    .icon{
-        font-size: 130px;
-        color: #000000;
-        background-size: cover;
-    }
-}
+
 .name{
     font-size: 18px;
     color: #ffffff;
+    margin-bottom: -10px;
+}
+@media(max-width:500px){
+    .photo{
+        height: 130px;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .carousel{
+        width: 315px;
+        height: 80%;
+    }  
+    .icon{
+        font-size: 130px;
+        color: #ffffff;
+        background-size: cover;
+    }
 }
 

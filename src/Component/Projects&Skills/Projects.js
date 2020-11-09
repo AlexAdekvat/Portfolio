@@ -1,43 +1,42 @@
 import React from 'react';
 import s from './Carousel.module.css';
-import { Carousel } from 'react-bootstrap';
 import Calculator from './../../image/Calculator.png'
 import Network from './../../image/Network.jpg'
 import { useTranslation } from 'react-i18next';
-
-
+import { Carousel } from 'react-bootstrap';
 
 const Projects = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
-        <div>
-            <Carousel className={s.carousel} id="carousel" interval={null} indicators={null}>
-                <Carousel.Item className={s.items} id="#carousel">
-                    <div className={s.wrapper} id="#carousel">
-                        <a href='https://alexadekvat.github.io/Network/' >
-                            <img className={s.photo} src={Network} id="#carousel" />
-                        </a>
-                        <div className={s.name}>
-                            <p>{t('ProjectsNet')}</p>
-                        </div>
+        <Carousel className={s.carousel} interval={null} indicators={null} >
+            <Carousel.Item>
+                <span className={s.wrapper}>
+                    <a href='https://alexadekvat.github.io/Network/' >
+                        <img
+                            className={s.photo}
+                            src={Network}
+                            alt="First slide"
+                        /></a>
+                    <div className={s.name}>
+                        <p>{t('ProjectsNet')}</p>
                     </div>
-                </Carousel.Item>
-                <Carousel.Item className={s.items} id="#carousel" >
-                    <div className={s.wrapper} id="#carousel">
-                        <a href='https://alexadekvat.github.io/Calculator/'>
-                            <img className={s.photo} src={Calculator}  id="#carousel"/>
-                        </a>
-                        <div className={s.name}>
-                            <p>{t('ProjectsCalc')}</p>
-                        </div>
+                </span>
+            </Carousel.Item>
+            <Carousel.Item>
+                <span className={s.wrapper}>
+                    <a href='https://alexadekvat.github.io/Calculator/'>
+                        <img
+                            className={s.photo}
+                            src={Calculator}
+                            alt="2 slide"
+                        /></a>
+                    <div className={s.name}>
+                        <p>{t('ProjectsCalc')}</p>
                     </div>
-                </Carousel.Item>
-            </Carousel>
-        </div>
-
+                </span>
+            </Carousel.Item>
+        </Carousel>
     )
 }
-
-
 export default Projects

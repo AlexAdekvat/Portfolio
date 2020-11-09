@@ -5,36 +5,28 @@ import { useTranslation } from 'react-i18next';
 
 
 const ContactContainer = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [nameError, setNameError] = useState('');
     let error = {};
     if (!nameError) {
-        // error.name = 'ERROR'
     } else if (nameError.length < 2 || nameError.length > 10){
         error.name = 'Enter at least three characters'
     }
     
-
-
     const [emailErrors, setErrors] = useState('');
     let errors = {};
     if (!emailErrors) {
     } else if (!/\S+@\S+\.\S+/.test(emailErrors )) {
          errors.email = 'Enter a valid value';
-        // errors.email = 'Email address is required';
-
     };
-
 
     const [messageError, setMessageError] = useState('');
     let merror = {};
     if (!messageError) {
-        // merror.message = 'ERROR'
     } else if (messageError.length < 10 || messageError.length > 100){
         merror.message = 'Enter at least ten characters'
     }
-
 
 
     return (
@@ -55,7 +47,6 @@ const ContactContainer = () => {
                                 className={s.name} />
                             {error.name && (
                                 <p className={s.danger}>
-                                    {/* {error.name}  */}
                                     {t('ErrorName')}
                                 </p>
                             )}

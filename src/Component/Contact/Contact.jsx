@@ -10,7 +10,7 @@ library.add(faLinkedinIn, faVk, faGithub, faTelegram);
 
 
 const Communication = () => {
-const { t, i18n } = useTranslation();
+const { t } = useTranslation();
 
     return (
         <div>

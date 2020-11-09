@@ -5,32 +5,17 @@
     min-height: 100vh;
 }
 
-
-@media(max-width: 1366px){
-    .info{
-        display: flex;
-        justify-content: space-between;
-        /* align-items: center; */
-        padding: 20px;
-    }
-}
-@media(max-width:500px){
-    .info{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }   
-}
-
-
-/* ava+desription */
-
-
 .containerInfo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+}
+
+.descriptionMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
 }
 
 .avatar img{
@@ -41,8 +26,9 @@
     border-radius: 100px;
     border: 3px solid #ffffff;
     box-shadow: 0 0 15px rgb(0, 0, 0);
-
+    margin-bottom: 20px;
 }
+
 .myself{
     color: rgb(218, 216, 216);
     display: flex;
@@ -51,40 +37,22 @@
     text-align: center;
     font-size: 20px;
     max-width: 200px;
-    }
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 .project, .skill {
-    color: blanchedalmond;
+    color: #ffffff;
     font-size: 20px;
     text-align: center;
 }
-@media(max-width:500px){
-    .project, .skill {
-        margin-bottom: 10px;
-    }
-}
+
 .containerSkillProject{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-@media(max-width:500px){
-    .containerSkillProject{
-        order: 1;
-    }
-}
-
-@media(max-width:500px){
-    .project, .skill {
-    color: blanchedalmond;
-    font-size: 20px;
-    text-align: center;
-    /* margin-top: -0px;  */
-    }
-}
-
-
 
 .btnContact{
     width: 200px;
@@ -92,8 +60,34 @@
     background-color: rgb(255, 255, 255);
     border:none;
     border-radius: 10px;
+    margin-bottom: 10px;
 
 }
+
 .text{
     text-align: center;
+}
+
+@media(max-width: 1366px){
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+@media(max-width:500px){
+    .info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }   
+    .containerSkillProject{
+        order: 1;
+    }
+    .project, .skill {
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        }
 }

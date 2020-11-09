@@ -20,22 +20,24 @@ const Info = () => {
     return (
         <div className={s.info}>
             <div className={s.containerSkillProject}>
-                <div className={s.skill} >{t('Skills')}</div>
+                <span className={s.skill} >{t('Skills')}</span>
                 <Skills />
             </div>
 
             <div className={s.containerInfo}>
-                <div className={s.avatar}>
-                    <img src={avatar} alt='Photo' />
-                </div>
-                <div className={s.switch}>
-                    <SwitchLang  />
-                </div>
-                <div className={s.container}>
-                    <div className={s.myself}>
-                        <span>{t('InfoHi')}</span>
-                        <span>{t('InfoName')}</span>
-                        <span>{t('InfoI`m')}</span>
+                <div className={s.descriptionMe}>
+                    <div className={s.avatar}>
+                        <img src={avatar} alt='Photo' />
+                    </div>
+                    <div className={s.switch}>
+                        <SwitchLang />
+                    </div>
+                    <div className={s.container}>
+                        <div className={s.myself}>
+                            <span>{t('InfoHi')}</span>
+                            <span>{t('InfoName')}</span>
+                            <span>{t('InfoI`m')}</span>
+                        </div>
                     </div>
                 </div>
                 <div className={s.btn}>
@@ -43,7 +45,7 @@ const Info = () => {
                 </div>
             </div>
             <div className={s.containerSkillProject}>
-                <div className={s.project}>{t('Project')}</div>
+                <span className={s.project}>{t('Project')}</span>
                 <Projects />
             </div>
             <Modal show={show} onHide={handleClose} >
