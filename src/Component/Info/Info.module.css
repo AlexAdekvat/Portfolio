@@ -61,7 +61,6 @@
     border:none;
     border-radius: 10px;
     margin-bottom: 10px;
-
 }
 
 .text{
@@ -90,4 +89,20 @@
         font-size: 20px;
         text-align: center;
         }
+}
+@media(max-width:900px){
+    .info{
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+    }  
+
+    .containerSkillProject{
+        order: 1;
+    }
+    .containerInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

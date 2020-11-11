@@ -73,6 +73,7 @@ form textarea{
     }
     
 }
+
 @media (min-width: 1366px){
     .container{
         display: flex;

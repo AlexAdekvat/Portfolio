@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Info from './Component/Info/Info';
 
@@ -7,9 +7,7 @@ import Info from './Component/Info/Info';
 function App() {
 
   return (
-    <div className="App">
       <Info />
-    </div>
   );
 
 }
